@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Minimalist</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <style>
+        body { padding: 50px; text-align: center; }
+        nav { margin-bottom: 50px; }
+        .container { max-width: 400px; margin: 0 auto; text-align: left; }
+        h1 { text-align: center; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a class="button button-outline" href="index.html">Home</a>
+        <a class="button button-outline" href="about.html">About</a>
+        <a class="button button-outline" href="gallery.html">Gallery</a>
+        <a class="button" href="contact.html">Contact</a> </nav>
+
+    <div class="container">
+        <h1>Say Hello.</h1>
+        
+        <form action="https://formspree.io/f/your@email.com" method="POST">
+            <label for="name">Name</label>
+            <input type="text" placeholder="Your Name" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" placeholder="name@example.com" id="email" name="_replyto" required>
+
+            <label for="message">Message</label>
+            <textarea placeholder="How can I help?" id="message" name="message" required></textarea>
+
+            <input class="button-primary" type="submit" value="Send Message">
+        </form>
+    </div>
+</body>
+</html>
