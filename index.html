@@ -10,19 +10,38 @@
     <style>
         body { padding: 50px; text-align: center; }
         nav { margin-bottom: 50px; }
-        .container { max-width: 600px; }
+        .container { max-width: 600px; margin: 0 auto; }
+        
+        /* Styling the names section */
+        .team-section {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 0.1rem solid #e1e1e1;
+        }
+        .name-tag {
+            font-weight: 700;
+            color: #9b4dca;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
     </style>
 </head>
 <body>
     <nav>
-        <a class="button" href="index.html">Home</a>
-        <a class="button button-outline" href="about.html">About</a>
+        <a class="button" href="index.html">Home</a> <a class="button button-outline" href="about.html">About</a>
         <a class="button button-outline" href="gallery.html">Gallery</a>
         <a class="button button-outline" href="contact.html">Contact</a>
     </nav>
+
     <div class="container">
         <h1>Welcome.</h1>
         <p>This is a super minimal, stylish landing page hosted on GitHub.</p>
+
+        <div class="team-section">
+            <h6>Created By</h6>
+            <span class="name-tag">Dela Cruz, Richter Vhon C.</span>
+            <span class="name-tag">Franco, John Carlo S.</span>
+        </div>
     </div>
 </body>
 </html>
