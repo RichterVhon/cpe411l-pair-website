@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Minimalist</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <style>
+        body { padding: 50px; text-align: center; }
+        nav { margin-bottom: 50px; }
+        
+        /* The Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 2rem;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            border-radius: 8px; /* Rounded corners for style */
+            transition: transform 0.3s ease; /* Smooth hover effect */
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a class="button button-outline" href="index.html">Home</a>
+        <a class="button button-outline" href="about.html">About</a>
+        <a class="button" href="gallery.html">Gallery</a>
+        <a class="button button-outline" href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>Gallery</h1>
+        <p>A collection of minimal inspiration.</p>
+        
+        <div class="gallery-grid">
+            <img src="https://picsum.photos/400/400?random=1" alt="Random Image 1">
+            <img src="https://picsum.photos/400/400?random=2" alt="Random Image 2">
+            <img src="https://picsum.photos/400/400?random=3" alt="Random Image 3">
+            <img src="https://picsum.photos/400/400?random=4" alt="Random Image 4">
+        </div>
+    </div>
+</body>
+</html>
