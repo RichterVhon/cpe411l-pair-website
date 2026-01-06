@@ -12,6 +12,16 @@
         nav { margin-bottom: 50px; }
         .container { max-width: 600px; margin: 0 auto; }
         
+        /* New description styling */
+        .description-box {
+            text-align: left;
+            background: #f4f5f6;
+            padding: 2.5rem;
+            border-left: 5px solid #9b4dca;
+            border-radius: 4px;
+            margin: 2rem 0;
+        }
+
         /* Styling the names section */
         .team-section {
             margin-top: 4rem;
@@ -24,23 +34,39 @@
             display: block;
             margin-bottom: 0.5rem;
         }
+        .course-info {
+            font-size: 1.2rem;
+            letter-spacing: 0.1rem;
+            color: #606c76;
+            text-transform: uppercase;
+        }
     </style>
 </head>
 <body>
     <nav>
-        <a class="button" href="index.html">Home</a> <a class="button button-outline" href="about.html">About</a>
+        <a class="button" href="index.html">Home</a> 
+        <a class="button button-outline" href="about.html">About</a>
         <a class="button button-outline" href="gallery.html">Gallery</a>
         <a class="button button-outline" href="contact.html">Contact</a>
     </nav>
 
     <div class="container">
-        <h1>Welcome.</h1>
-        <p>This is a super minimal, stylish landing page hosted on GitHub.</p>
+        <h1>Welcome, Sir Janjan!</h1>
+        
+        <div class="description-box">
+            <p>This project is a <strong>minimalist web demonstration</strong> hosted entirely on GitHub Pages. We have designed this site to showcase:</p>
+            <ul>
+                <li><strong>Clean Frontend:</strong> Leveraging Milligram for a lightweight, stylish UI.</li>
+                <li><strong>Branching Strategy:</strong> Each page was developed as a distinct feature branch.</li>
+                <li><strong>Static Hosting:</strong> Proving that effective design doesn't require a complex backend.</li>
+            </ul>
+        </div>
 
         <div class="team-section">
             <h6>Created By</h6>
             <span class="name-tag">Dela Cruz, Richter Vhon C.</span>
             <span class="name-tag">Franco, John Carlo S.</span>
+            <p class="course-info">CPE 411L — BSCPE 4A, G1</p>
         </div>
     </div>
 </body>
